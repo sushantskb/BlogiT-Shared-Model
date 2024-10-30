@@ -24,10 +24,15 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    default: ["user", "admin"],
+    enum: ["user", "admin"],
+    default: "user",
   },
   interestedDomains: [{ type: String }],
   isVerified: {
+    type: Boolean,
+    default: false,
+  },
+  isAllowed: {
     type: Boolean,
     default: false,
   },
