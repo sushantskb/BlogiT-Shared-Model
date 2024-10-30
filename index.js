@@ -1,6 +1,9 @@
 import dotenv from "dotenv";
 import connectDB from "./db.js";
 dotenv.config();
-connectDB()
+connectDB();
 import User from "./models/user.model.js";
-export { connectDB, User };
+import Tag from "./models/tags.model.js";
+import Comment from "./models/comments.model.js";
+import Post from "./models/post.model.js";
+export { connectDB, User, Tag, Comment, Post };
