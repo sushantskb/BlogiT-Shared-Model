@@ -9,6 +9,9 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please add a content"],
     },
+    publicId: {
+      type: String,
+    },
     thumnail: {
       type: String,
     },
@@ -19,7 +22,7 @@ const postSchema = new mongoose.Schema(
     },
     tags: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Tags",
+      ref: "Tag",
     },
     author: {
       type: mongoose.Schema.Types.ObjectId,
