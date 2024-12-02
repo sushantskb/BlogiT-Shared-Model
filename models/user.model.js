@@ -17,6 +17,9 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
     },
+    salt: {
+      type: String,
+    },
     phoneNo: {
       type: String,
     },
