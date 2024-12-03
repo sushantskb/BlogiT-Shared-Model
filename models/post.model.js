@@ -9,9 +9,6 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please add a content"],
     },
-    publicId: {
-      type: String,
-    },
     thumnail: {
       type: String,
     },
@@ -28,9 +25,15 @@ const postSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    comments: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Comment",
+    comments: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Comment",
+      },
+    ],
+    views: {
+      type: Number,
+      default: 0,
     },
   },
   {
