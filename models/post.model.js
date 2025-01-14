@@ -14,7 +14,7 @@ const postSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["pending", "published"],
+      enum: ["pending", "published", "drafted"],
       default: "pending",
     },
     tags: {
@@ -34,9 +34,6 @@ const postSchema = new mongoose.Schema(
     views: {
       type: Number,
       default: 0,
-    },
-    isDraft: {
-      type: Boolean
     }
   },
   {
