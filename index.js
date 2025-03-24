@@ -7,4 +7,5 @@ import Tag from "./models/tags.model.js";
 import Comment from "./models/comments.model.js";
 import Post from "./models/post.model.js";
 import Token from "./models/token.model.js";
-export { connectDB, User, Tag, Comment, Post, Token };
+import Otp from "./models/otp.model.js"
+export { connectDB, User, Tag, Comment, Post, Token, Otp };
