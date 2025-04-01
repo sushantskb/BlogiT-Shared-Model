@@ -34,7 +34,11 @@ const postSchema = new mongoose.Schema(
     views: {
       type: Number,
       default: 0,
-    }
+    },
+    editorsPick: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
