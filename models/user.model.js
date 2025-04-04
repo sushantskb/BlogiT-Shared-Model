@@ -40,6 +40,20 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    savedPosts: [
+      {
+        postId: {
+          type: String,
+        },
+      },
+    ],
+    draftedPosts: [
+      {
+        postId: {
+          type: String,
+        },
+      },
+    ],
   },
   { timestamps: true }
 );
