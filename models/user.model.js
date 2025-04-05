@@ -42,16 +42,14 @@ const userSchema = new mongoose.Schema(
     },
     savedPosts: [
       {
-        postId: {
-          type: String,
-        },
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Post",
       },
     ],
     draftedPosts: [
       {
-        postId: {
-          type: String,
-        },
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Post",
       },
     ],
   },
