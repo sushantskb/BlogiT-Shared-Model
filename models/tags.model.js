@@ -8,6 +8,8 @@ const tagSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+tagSchema.index({ name: "text" });
+
 const Tag = mongoose.model("Tag", tagSchema);
 
 export default Tag;
