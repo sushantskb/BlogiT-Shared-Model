@@ -9,4 +9,5 @@ import Post from "./models/post.model.js";
 import Token from "./models/token.model.js";
 import Otp from "./models/otp.model.js";
 import Newsletter from "./models/newsletter.model.js";
-export { connectDB, User, Tag, Comment, Post, Token, Otp, Newsletter };
+import Contact from "./models/contact.model.js";
+export { connectDB, User, Tag, Comment, Post, Token, Otp, Newsletter, Contact };
