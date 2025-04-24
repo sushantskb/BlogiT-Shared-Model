@@ -14,3 +14,7 @@ const contactSchema = new mongoose.Schema({
     type: String,
   },
 });
+
+const Contact = mongoose.model("Contact", contactSchema);
+
+export default Contact;
