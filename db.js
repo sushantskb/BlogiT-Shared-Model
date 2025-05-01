@@ -7,7 +7,7 @@ const connectDB = async () => {
   try {
     
     await mongoose.connect(
-      "mongodb+srv://rahulgudu2003:rahulgudu2003@cluster1.jf1eva8.mongodb.net/",
+      "mongodb+srv://sushantskb:tnahsus@cluster1.nszhzyf.mongodb.net/",
       {
         dbName: "BlogIt",
       }
