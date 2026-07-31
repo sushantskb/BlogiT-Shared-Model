@@ -9,7 +9,11 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please add a content"],
     },
-    thumnail: {
+    thumbnail: {
+      type: String,
+    },
+    // ImageKit file id — required to delete the asset when the post is removed.
+    thumbnailFileId: {
       type: String,
     },
     status: {

@@ -26,6 +26,10 @@ const userSchema = new mongoose.Schema(
     profileImg: {
       type: String,
     },
+    // ImageKit file id for the avatar, so the old one can be cleaned up on replace.
+    profileImgFileId: {
+      type: String,
+    },
     role: {
       type: String,
       enum: ["user", "admin"],
